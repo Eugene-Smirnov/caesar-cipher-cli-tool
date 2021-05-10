@@ -6,8 +6,6 @@ function alphabet() {
   return alphabet;
 }
 
-module.exports.alphabet = alphabet;
-
 function alphabetFromChar(char) {
   let AZ = alphabet();
   let index = AZ.indexOf(char);
@@ -15,4 +13,4 @@ function alphabetFromChar(char) {
   return tail.concat(AZ);
 }
 
-module.exports.alphabetFromChar = alphabetFromChar;
+module.exports = { alphabet, alphabetFromChar };
